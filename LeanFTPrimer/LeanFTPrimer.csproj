@@ -68,9 +68,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LeanFtTest.cs" />
+    <Compile Include="POM\PageObject.cs" />
     <Compile Include="UnitTestClassBase.cs" />
     <None Include="App.config" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helper\" />
+    <Folder Include="TDD\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

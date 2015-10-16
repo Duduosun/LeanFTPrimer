@@ -39,6 +39,8 @@ namespace LeanFTPrimer
         {
             IBrowser browser = BrowserFactory.Launch(BrowserType.InternetExplorer);
             browser.Navigate("www.google.com");
+            browser.Describe<IEditField>(new XPathDescription(@"//INPUT[@id=""lst-ib""]")).SetValue("LeanFT");
+            browser.Describe<IButton>(new XPathDescription(@"//FORM[@id=""tsf""]/DIV[2]/DIV[3]/CENTER[1]/INPUT[1]")).Click();           
             browser.Sync();           
         }
             
